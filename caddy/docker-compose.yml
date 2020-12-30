@@ -11,6 +11,8 @@ services:
       file: ../global/docker-compose.yml
       service: global
     image: foundationkitty/mediatower:caddy
+    networks:
+      - web
     ports:
       - '80:80'
       - '443:443'
